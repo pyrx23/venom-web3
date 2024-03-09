@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){$("[data-toggle=modal]").click(function(){if($('.modal[id="'+$(this).attr("data-target")+'"]')!=="#"+$(this).parents(".modal").attr("id")){$(this).parents(".modal").modal("hide").on("hidden.bs.modal",function(){$("body").addClass("modal-open");});}});});
